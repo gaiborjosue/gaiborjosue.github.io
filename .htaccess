@@ -1,5 +1,3 @@
-ErrorDocument 404 https://edwardgaibor.me/404.html
-
 #remove html file extension https://example.com/page.html
 # to https://example.com/page
 RewriteEngine On

@@ -1,453 +1,306 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="Author" content="Edward Josue Gaibor Jiménez" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
-    <!-- =====BOX ICONS===== -->
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <script
-      src="https://kit.fontawesome.com/805b74adf5.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="shortcut icon" type="image/png" href="assets/img/podfav.png" />
-
-    <!-- =====TAB LOGO===== -->
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/img/perfil_2.jfif"
-    />
-
-    <title>Projects | Edward Gaibor</title>
-  </head>
-
-  <body class="body__projects" id="body-pd">
-    <header class="header" id="header">
-      <div class="header__toggle">
-        <i class="bx bx-menu" id="header-toggle"></i>
-      </div>
-
-      <div class="header__img">
-        <img src="assets/img/perfil_2.jfif" alt="" />
-      </div>
+    <link rel="icon" type="image/webp" href="assets/images/profile.webp">
+</head>
+  <body>
+    <header class="projects-header">
+      <a href="index.html" class="return-button">Return to Homepage</a>
     </header>
 
-    <div class="l-navbar" id="nav-bar">
-      <nav class="nav">
-        <div>
-          <a href="index" class="nav__logo">
-            <i class="bx bxs-dashboard nav__logo-icon"></i>
-            <span class="nav__logo-name">Edward Gaibor</span>
+    <div class="project-grid-page">
+
+      <div class="project-box-page">
+        <img src="assets/images/qrpigeon.png" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">QR Pigeon</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Flask</span>
+          <span class="tech-item">HTML</span>
+          <span class="tech-item">CSS</span>
+          <span class="tech-item">JavaScript</span>
+          <span class="tech-item">Cloud Computing</span>
+          <span class="tech-item">Python</span>
+        </div>
+
+        <p class="project-description-page">We realized that all tools for sharing images from your phone to your laptop have a certain level of friction. Thus, we aim to make the sharing process as smooth as possible. No apps. No account setup. No clutter. </p>
+        <div class="project-links-page">
+          <a href="https://github.com/leiDnedyA/qr-image-drop" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
           </a>
-
-          <div class="nav__list">
-            <a href="index" class="nav__link">
-              <i class="bx bx-home nav__icon"></i>
-              <span class="nav__name">Home</span>
-            </a>
-
-            <a href="index#about" class="nav__link">
-              <i class="bx bx-user nav__icon"></i>
-              <span class="nav__name">About</span>
-            </a>
-
-            <a href="projects" class="nav__link active">
-              <i class="bx bx-code-alt nav__icon"></i>
-              <span class="nav__name">Projects</span>
-            </a>
-
-            <a href="achievements" class="nav__link">
-              <i class="bx bx-medal nav__icon"></i>
-              <span class="nav__name">Achievements</span>
-            </a>
-
-            <a href="contact" class="nav__link">
-              <i class="bx bx-message nav__icon"></i>
-              <span class="nav__name">Contact Me</span>
-            </a>
-          </div>
-        </div>
-
-        <a
-          href="https://blog.ytuquepiensas.net"
-          target="_blank"
-          class="nav__link"
-        >
-          <i class="bx bxl-wordpress nav__icon"></i>
-          <span class="nav__name">My Blog</span>
-        </a>
-      </nav>
-    </div>
-
-    <section class="projects">
-      <h1 class="projects_title">Projects</h1>
-
-      <div class="projects_div">
-        <div class="project_cards">
-          <div class="project_card">
-            <img src="./assets/img/pdfgpt.png" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">
-                Streamlit, OpenAI, LLMs, LangChain “PDF GPT”
-              </h2>
-              <p>
-                Built a multi-pdf analyzer and question-answer bot with five auto-generated preview questions.
-              </p>
-            </div>
-            <div class="project__info">
-              <div>
-                <a href="https://github.com/gaiborjosue/PDF-GPT" target="_blank" class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img src="./assets/img/Tutorial-Sklearn.jpg" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">
-                9 Machine Learning Projects with Tensorflow
-              </h2>
-              <p>
-                I did nine projects on developing models for Handwriting recognition, Titanic survival prediction, Baseball Strikes prediction, Tweet classification, Income prediction, Naive Bayes, Perceptrons, and more, using sklearn. As a result, I achieved a certification.
-              </p>
-            </div>
-            <div class="project__info">
-              <div>
-                <a href="https://github.com/gaiborjosue/Machine_Learning_Models" target="_blank" class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project_card">
-            <img src="./assets/img/DL.png" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">
-                6 Deep Learning Projects with Tensorflow
-              </h2>
-              <p>
-                Collection of 6 Deep Learning projects implemented using TensorFlow. These projects showcase various applications and techniques of Deep Learning, providing hands-on examples for building neural networks and solving real-world problems.
-              </p>
-            </div>
-            <div class="project__info">
-              <div>
-                <a href="https://github.com/gaiborjosue/DeepLearning-Projects" target="_blank" class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-            </div>
-        </div>
-        
-          <div class="project_card">
-            <img src="./assets/img/exoplanet.jpg" alt="" class="project_image">
-            <div class="project_content">
-                <h2 class="project_title">Exoplanet Predictor Algorithm</h2>
-                <p>In this project I build a Machine Learning Algorithm in order to predict how many planets can a certain system have based on its mass, age, etc. It was a very interesting project built with python and Decision Tree Algorithmic aplication, but it can also be applied with polinomial models. </p>
-            </div>
-            <div class="project__info">
-                <div>
-                    <a href="https://github.com/gaiborjosue/ml_exoplanet_prediction" class="bx bxl-github" target="_blank" style="color: #0E2431;"></a>
-                </div>
-                <div class="git_icon">
-                  <a href="https://edwardgaibor.me/exoplanets" target="_blank" class="bx bx-world" style="color: #0e2431; padding-left: 20px;"></a>
-                </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img src="./assets/img/drug.jpg" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">Drug Medication based on Condition</h2>
-              <p>
-                Classify drugs and use user interaction to prompt the user the top 10 drugs for the condition they entered. This is not a medical prescription system. It is just for the user to have a clear panorama of the possible routes they can go with medical supervision and the experience of others that already have gone through that route.
-              </p>
-            </div>
-            <div class="project__info">
-              <div class="git_icon">
-                <a
-                  href="https://github.com/gaiborjosue/drug_medication"
-                  target="_blank"
-                  class="bx bxl-github"
-                  style="color: #0e2431"
-                ></a>
-              </div>
-              <div class="git_icon">
-                <a href="https://edwardgaibor.me/drug-medication" target="_blank" class="bx bx-world" style="color: #0e2431; padding-left: 20px;"></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="project_card">
-            <img src="./assets/img/iot.jpeg" alt="" class="project_image">
-            <div class="project_content">
-                <h2 class="project_title">Temperature vs. Humidity Model inside a greenhouse</h2>
-                <p>In this project with the help of Python I used the data recollected in my greenhouse. With this data I obtained a mathematical model in order to predict Humidity within a data of Temperature inside my hidroponic greenhouse.</p>
-            </div>
-            <div class="project__info">
-                <div>
-                    <a href="https://github.com/gaiborjosue/Temp_vs_Hum" class="bx bxl-github" target="_blank" style="color: #0E2431;"></a>
-                </div>
-                <div class="git_icon">
-                  <a href="https://1drv.ms/b/s!ArFmrAajjkk_h89PRYD60ZkF5AyjtA?e=t6pd10" target="_blank" class="bx bx-paperclip" style="color: #0e2431; padding-left: 20px;"></a>
-                </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img src="./assets/img/temp-hum.png" alt="" class="project_image">
-            <div class="project_content">
-                <h2 class="project_title">Local Weather Predictor</h2>
-                <p>In this project with the help of Python I used the data recollected in my town area. With this data I used a machine learning algorithm to predict either temperature or humidity conditions. I also used arduino sensors to recollect the data.</p>
-            </div>
-            <div class="project__info">
-                <div>
-                    <a href="https://github.com/gaiborjosue/Temp-Hum-Predictor" class="bx bxl-github" target="_blank" style="color: #0E2431;"></a>
-                </div>
-            </div>
-          </div>
-
-
-          <div class="project_card">
-            <img src="./assets/img/resp.jpg" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">Responsive Podcast Website</h2>
-              <p>
-                In this project I design my podcast website, considering its
-                responsiveness. During the development of the website, I used
-                HTML5, CSS3, and Javascript for the animation. I also implemented the scrollreveal framework, in
-                order to add a much more personalized effect. The typing
-                animation is also an iconic element of the site.
-              </p>
-            </div>
-            <div class="project__info">
-              <div>
-                <a href="https://github.com/gaiborjosue/ytuquepiensas.github.io" target="_blank" class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-            </div>
-          </div>
-          <div class="project_card">
-            <img src="./assets/img/pod.jpg" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">¿Y Tú, Que Piensas? - Podcast</h2>
-              <p>
-                This project is a personal boosted idea that I decided to
-                implement since 2019 to the present date. I see this podcast as
-                an excellent way to communicate my ideas, learn from
-                professional people in the topic, and discuss about
-                environmental issues or give specific information about some of
-                the IB topics.
-              </p>
-            </div>
-
-            <div class="project__info">
-              <div>
-                <a
-                  href="https://ytuquepiensas.net"
-                  target="_blank"
-                  class="bx bx-world"
-                  style="color: #0e2431"
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="project_card">
-            <img src="./assets/img/air_p.jpg" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">
-                Hourly variation in concentration levels (μg/m3) of PM2.5, O3, SO2, and CO
-              </h2>
-              <p>
-                This project focuses on comparing the Air Pollution data before and during the Pandemic of the Covid-19, to stablish environmental conclusions of its impact.
-              </p>
-            </div>
-            <div class="project__info">
-              <div>
-                <a href="https://github.com/gaiborjosue/Contaminacion_Quito_Python" target="_blank" class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-              <div>
-                <a href="https://1drv.ms/b/s!ArFmrAajjkk_h89OBastsJT42ifLDQ?e=NfasZX" target="_blank" class="bx bx-paperclip" style="color: #0e2431; padding-left: 20px;"></a>
-              </div>
-            </div>
-          </div>
-          <div class="project_card">
-            <img src="./assets/img/voice.jpeg" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">"Andromeda" Assitant</h2>
-              <p>
-                In this project I created a Voice Assistant named Andromeda. The
-                main language I used was Python and its libraries. I used
-                OpenCv to add facial recognition and activation of the Voice
-                Assistant. This was the first project I coded using Python.
-              </p>
-            </div>
-            <div class="project__info">
-              <div class="git_icon">
-                <a href="https://github.com/gaiborjosue/Andromeda-AI" target = "_blank"class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img src="./assets/img/arduino.png" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">
-                BioInv_IoT
-              </h2>
-              <p>
-                This project references more the circuit part of the modeling
-                inside a greenhouse, in order to automate Lettuce growing using
-                hidroponic tecniques and Sensors data. The data processing was
-                implemented using ThinkSpeak and API's.
-              </p>
-            </div>
-            <div class="project__info">
-              <div class="git_icon">
-                <a href="https://github.com/gaiborjosue/Hidroponic_IOT_Greenhouse" taget="_blank" class="bx bxl-github" style="color: #0e2431"></a>
-              </div>
-              <div class="git_icon">
-                <a href="https://1drv.ms/b/s!ArFmrAajjkk_h89NMAPhRxwEbxVBTg?e=xBKHkg" target="_blank" class="bx bx-paperclip" style="color: #0e2431; padding-left: 20px;"></a>
-              </div>
-              <div class="git_icon">
-                <a href="https://edwardgaibor.me/bioinviot" target="_blank" class="bx bx-world" style="color: #0e2431; padding-left: 20px;"></a>
-              </div>
-            </div>
-          </div>
-          <div class="project_card">
-            <img src="./assets/img/cas_inf.jfif" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">"CAS INFORMA" - Community Project</h2>
-              <p>
-                This is a social project to spread information about Covid-19 during
-                the Pandemic. The project focuses in Creativity, Action and
-                Service. So, we covered environmental, health, Elderly care, and
-                educational ideas such as building organic gardens, publishing
-                informational videos and supporting the betterment in the local
-                community.
-              </p>
-            </div>
-            <div class="project__info">
-              <div class="git_icon">
-                <a
-                  href="https://linktr.ee/Casinformando"
-                  target="_blank"
-                  class="bx bx-world"
-                  style="color: #0e2431"
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img src="./assets/img/pod_2.png" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">CASInformando - Podcast</h2>
-              <p>
-                A podcast dedicated to inform our community about COVID-19 news,
-                self-care strategies, recommendations, and more. In this podcast
-                I am one of the 6 Hosts that take part of this wonderful
-                project.
-              </p>
-            </div>
-            <div class="project__info">
-              <div class="git_icon">
-                <a
-                  href="https://linktr.ee/Casinformando"
-                  target="_blank"
-                  class="bx bx-world"
-                  style="color: #0e2431"
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_card">
-            <img src="./assets/img/peltier.png" alt="" class="project_image">
-            <div class="project_content">
-              <h2 class="project_title">Model to represent temperature and electric current of a Peltier cell</h2>
-              <p>
-                Recollect data by measuring 50 times the temperature of the Peltier cell while variating the electric current with a circuit I built (see paper). Create models with the data and conclude that the relationship between the current and temperature of a Peltier cell is negative quadratic.
-              </p>
-            </div>
-            <div class="project__info">
-              <div class="git_icon">
-                <a
-                  href="https://1drv.ms/b/s!ArFmrAajjkk_h89QH9dc6-sNkLa1Tw?e=IzjRHM"
-                  target="_blank"
-                  class="bx bx-world"
-                  style="color: #0e2431"
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          
-
-
+          <a href="https://www.qrpigeon.pics" target="_blank" class="project-link-page">
+            <i class="fas fa-globe"></i>
+          </a>
         </div>
       </div>
-    </section>
-    <style type="text/css" media="screen">
-      .inat-widget { font-family: Georgia, serif; padding: 10px; line-height: 1;}
-      .inat-widget-header {margin-bottom: 10px; display: flex; justify-content: center; align-items: center; margin-top: 20px;}
-      .inat-widget td {vertical-align: top; padding-bottom: 10px;}
-      .inat-label { color: #888; }
-      .inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
-      .inat-observation-body, .inat-user-body { padding-left: 10px; }
-      .inat-observation-image {text-align: center;}
-      .inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
-      .inat-observation-image img, .inat-user-image img { max-width: 48px; }
-      .inat-observation-image img { vertical-align: middle; }
-      .inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
-      .inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
-      .inat-user-body {vertical-align: middle;}
-      .inat-widget td.inat-user-body {vertical-align: middle;}
-      .inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
-    </style>
 
-    <div class="inat-widget-div">
-        <div class="inat-widget">
-          <div class="inat-widget-header">
-            <a href="https://ecuador.inaturalist.org"><img alt="iNaturalist Ecuador" src="https://ecuador.inaturalist.org/assets/logo-small-7ef4973e4a8dc5ab069b36f32258a3e8.png" /></a>  
-          </div>
-        <script type="text/javascript" charset="utf-8" src="https://ecuador.inaturalist.org/observations/edward_gaibor1.widget?layout=small&limit=18&order=desc&order_by=observed_on"></script>
-        <table class="inat-footer">
-          <tr class="inat-user">
-              <td class="inat-user-image">
-                <a href="https://ecuador.inaturalist.org/observations/edward_gaibor1"><img class="usericon" src="https://static.inaturalist.org/attachments/users/icons/4587030/thumb.jpeg?1623703325" alt="Thumb" /></a>
-              </td>
-            <td class="inat-value">
-              <strong>
-                  <a href="https://ecuador.inaturalist.org/observations/edward_gaibor1">View edward_gaibor1's observations »</a>
-              </strong>
-            </td>
-          </tr>
-        </table>
+      <div class="project-box-page">
+        <img src="assets/images/PDFGPT.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">PDF GPT</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Streamlit</span>
+          <span class="tech-item">LangChain</span>
+          <span class="tech-item">OpenAI</span>
+          <span class="tech-item">Vector Databases</span>
+        </div>
+        <p class="project-description-page">Built a multi-pdf analyzer and question-answer bot with five auto-generated preview questions. Used streamlit, OpenAI, LLMs and LangChain. </p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/PDF-GPT" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://apdfgpt.streamlit.app" target="_blank" class="project-link-page">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    
-      
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script src="assets/js/main.js"></script>
+      <div class="project-box-page">
+        <img src="assets/images/melanoma.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Melanoma Predictor Website</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">HTML</span>
+          <span class="tech-item">CS</span>
+          <span class="tech-item">JavaScript</span>
+          <span class="tech-item">TensorFlow.js</span>
+        </div>
+        <p class="project-description-page">Built a website to host a model I collaborated to help building that uses Tensorflow.js with an optimized layer distribution and logic. This website enables uses to take a picture with their camera or upload a photo and run the DL model on that images, giving them the result whether or not the model predicted it is Melanoma or not.</p>
+        <div class="project-links-page">
+          <a href="https://github.com/mpsych/melanoma" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://mpsych.github.io/melanoma/" target="_blank" class="project-link-page">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/discordfeedback.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Class assignment feedback discord bot</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Linux</span>
+        </div>
+        <p class="project-description-page">Feedback Wizard Bot is a Discord bot designed to enhance the feedback and grading process within educational or training-oriented Discord servers. It simplifies the distribution and management of assignment feedback and grade distributions. Currently 2 university courses are using this discord bot to power their feedback distribution to students through Discord 😁</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/FeedbackDiscordBot" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/dns.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">DNS Traffic Control</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Linux</span>
+        </div>
+        <p class="project-description-page">The DNS Traffic Control Project is a machine learning project that aims to classify DNS traffic as either benign or malicious using stateless and stateful datasets. The purpose of this project is to build a model that can accurately detect and prevent malicious DNS traffic.</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/DNS-Traffic-Control" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/sklearn.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">9 Machine Learning Projects with Sklearn</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Sklearn</span>
+          <span class="tech-item">Jupyter Notebooks</span>
+        </div>
+        <p class="project-description-page">Built 9 ML projects on developing models for Handwriting recognition, Titanic survival prediction, Baseball Strikes prediction, Tweet classification, Income prediction, Naive Bayes, Perceptrons, and more, using sklearn. As a result, I achieved a certification.</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/Machine_Learning_Models" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.codecademy.com/profiles/Edward_Gaibor/certificates/5cab64c55f1de8039db366ef" target="_blank" class="project-link-page">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/tensorflow.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">6 Deep Learning Projects with Tensorflow</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Tensorflow</span>
+          <span class="tech-item">Jupyter Notebooks</span>
+        </div>
+        <p class="project-description-page">Collection of 6 Deep Learning projects implemented using TensorFlow. These include Air Quality Prediction, CNN for Pneumoniua prediction, galaxy type prediction, life expectancy predictor, medical cost preditor, patient survival predictor, x-ray lung predictor, and more!</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/DeepLearning-Projects" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.codecademy.com/profiles/Edward_Gaibor/certificates/5f85c4b9c431a800138a60e0" target="_blank" class="project-link-page">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="project-box-page">
+        <img src="assets/images/exoplanet.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Exoplanet Predictor</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Sklearn</span>
+          <span class="tech-item">Jupyter Notebooks</span>
+        </div>
+        <p class="project-description-page">In this project I build a Machine Learning Algorithm in order to predict how many planets can a certain system have based on its mass, age, etc. It was a very interesting project built with python and Decision Tree Algorithmic aplication, but it can also be applied with polinomial models. It later scaled as a collaborative project for the web!</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/Exoplanet_Prediction_ML" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://github.com/leiDnedyA/interactive-exoplanet-predictor" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="project-box-page">
+        <img src="assets/images/drug.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Drug Medication based on Condition</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Jupyter Notebooks</span>
+        </div>
+        <p class="project-description-page">Classify drugs and use user interaction to prompt the user the top 10 drugs for the condition they entered. This is not a medical prescription system. It is just for the user to have a clear panorama of the possible routes they can go with medical supervision and the experience of others that already have gone through that route. </p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/drug_medication" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/greenhouse.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Temperature vs. Humidity Model inside a greenhouse</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Arduino</span>
+        </div>
+        <p class="project-description-page">In this project with the help of Python I used the data recollected in my greenhouse. With this data I obtained a mathematical model in order to predict Humidity within a data of Temperature inside my hidroponic greenhouse. </p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/Modelizacion_Temperatura_Humedad" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://github.com/gaiborjosue/Modelizacion_Temperatura_Humedad/blob/master/EI_EM_MAY22_G5_MAT_hrr533.pdf" target="_blank" class="project-link-page">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/weather.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Local Weather Predictor</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Arduino</span>
+          <span class="tech-item">Sklearn</span>
+          <span class="tech-item">Joblib</span>
+          <span class="tech-item">Tkinter</span>
+        </div>
+        <p class="project-description-page">In this project with the help of Python I used the data recollected in my town area. With this data I used a machine learning algorithm to predict either temperature or humidity conditions. I also used arduino sensors to recollect the data.</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/Temp-Hum-Predictor" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/podcast.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Responsive Podcast Website</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">HTML</span>
+          <span class="tech-item">CSS</span>
+          <span class="tech-item">JavaScript</span>
+        </div>
+        <p class="project-description-page">In this project I design my podcast website, considering its responsiveness. During the development of the website, I used HTML5, CSS3, and Javascript for the animation. I also implemented the scrollreveal framework, in order to add a much more personalized effect. The typing animation is also an iconic element of the site. </p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/ytuquepiensas.github.io" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://gaiborjosue.github.io/ytuquepiensas.github.io/index.html#home" target="_blank" class="project-link-page">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="project-box-page">
+        <img src="assets/images/air.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Hourly variation in concentration levels (μg/m3) of PM2.5, O3, SO2, and CO</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Matplotlib</span>
+          <span class="tech-item">Pandas</span>
+          <span class="tech-item">Seaborn</span>
+        </div>
+
+        <p class="project-description-page">This project focuses on comparing the Air Pollution data before and during the Pandemic of the Covid-19, to stablish environmental conclusions of its impact. </p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/Contaminacion_Quito_Python" target="_blank" class="project-link-page">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="project-box-page">
+        <img src="assets/images/peltier.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Model to represent temperature and electric current of a Peltier cell</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">Matplotlib</span>
+          <span class="tech-item">Pandas</span>
+
+        </div>
+        <p class="project-description-page">Recollect data by measuring 50 times the temperature of the Peltier cell while variating the electric current with a circuit I built (see paper). Create models with the data and conclude that the relationship between the current and temperature of a Peltier cell is negative quadratic. </p>
+        <div class="project-links-page">
+          <a href="https://1drv.ms/b/s!ArFmrAajjkk_h89QH9dc6-sNkLa1Tw?e=q4DgMu" target="_blank" class="project-link-page">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-box-page">
+        <img src="assets/images/assistant.jpg" alt="Project Image" class="project-image-page">
+        <h3 class="project-title-page">Andromeda AI</h3>
+        <div class="project-tech-stack">
+          <span class="tech-item">Python</span>
+          <span class="tech-item">CLI</span>
+
+        </div>
+        <p class="project-description-page">This was my first project ever 😅, it was what I considered back then as "AI assistant." I am including it in my portfolio only because it has sentimental value, but also because it has facial recognition to personalize the assitance lol (A.K.A 1000 if statements).</p>
+        <div class="project-links-page">
+          <a href="https://github.com/gaiborjosue/Andromeda-AI" target="_blank" class="project-link-page">
+            <i class="fas fa-file-alt"></i>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <svg class="cursor cursor--1" width="12" height="12" viewBox="0 0 12 12" data-scale-enter="0" data-opacity-enter="0">
+      <circle class="cursor__inner" cx="6" cy="6" r="3"></circle>
+    </svg>
+    <svg class="cursor cursor--2" width="72" height="72" viewBox="0 0 72 72" data-scale-enter="2" data-opacity-enter=".5" data-amt="0.15">
+      <circle class="cursor__inner" cx="36" cy="36" r="18"></circle>
+    </svg>
+
+    <script src="assets/js/cursorEffect.js"></script>
   </body>
 </html>
-
-<!--<div class="home__data">
-    <h1 class="home__title">Hi!<br> I'am <span class="home__title-color"></span>, a:<br> <span class="typing"></span></h1>
-    <h2 class="home__subtitle">“I'm not a great programmer; I'm just a good programmer with great habits.”
-        <br> <span class="cite">― Kent Beck</span></br></h2>
-
-    <a href="#" class="button">Download CV</a>
-    <a href="#contact" class="button">Contact</a>
-    <a href="" class="button">Download CV</a>
-    </div>-->

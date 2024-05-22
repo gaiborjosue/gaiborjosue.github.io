@@ -1,97 +1,72 @@
-if (window.location.href !== window.location.href.toLowerCase()) {
-    window.location.href = window.location.href.toLowerCase();
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const tabs = document.querySelectorAll('.tab-link');
+  const content = document.querySelectorAll('.tab-content');
 
-/*===== SHOW NAVBAR  =====*/ 
-const showNavbar = (toggleId, navId, bodyId, headerId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId),
-    bodypd = document.getElementById(bodyId),
-    headerpd = document.getElementById(headerId)
-
-    // Validate that all variables exist
-    if(toggle && nav && bodypd && headerpd){
-        toggle.addEventListener('click', ()=>{
-            // show navbar
-            nav.classList.toggle('show')
-            // change icon
-            toggle.classList.toggle('bx-x')
-            // add padding to body
-            bodypd.classList.toggle('body-pd')
-            // add padding to header
-            headerpd.classList.toggle('body-pd')
-        })
-    }
-}
-
-showNavbar('header-toggle','nav-bar','body-pd','header')
-
-/*===== LINK ACTIVE  =====*/ 
-const linkColor = document.querySelectorAll('.nav__link')
-
-function colorLink(){
-    if(linkColor){
-        linkColor.forEach(l=> l.classList.remove('active'))
-        this.classList.add('active')
-    }
-}
-linkColor.forEach(l=> l.addEventListener('click', colorLink))
-
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-});
-
-/*SCROLL HOME*/
-sr.reveal('.home__title',{delay: 200}); 
-sr.reveal('.button',{delay: 200}); 
-sr.reveal('.home__subtitle',{ interval: 200}); 
-
-/*SCROLL ABOUT*/
-sr.reveal('.about-title',{delay: 200}); 
-sr.reveal('.skills__data',{delay: 200}); 
-sr.reveal('.skills__text',{delay: 200}); 
-
-/*SCROLL Projects*/
-sr.reveal('.project_card',{delay: 100}); 
-sr.reveal('.button_project',{delay: 100}); 
-/*SCROLL WORK*/
-sr.reveal('.work__title',{interval: 200}); 
-sr.reveal('.wrapper',{interval: 300}); 
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact_title',{interval: 200});
-sr.reveal('.contact_form_text',{interval: 300});
-sr.reveal('.button_c',{interval: 350});
-
-//typing animation
-var typed = new Typed(".typing", {
-    strings: ["Programmer.", "Python Lover.", "Future CS major.", "Research Fellow.", "Machine Learning Enthusiast.", "CS Club Event Planner."],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
-
-var pageX = $(document).width();
-var pageY = $(document).height();
-var mouseY = 0;
-var mouseX = 0;
-
-$(document).mousemove(function (event) {
-  //verticalAxis
-  mouseY = event.pageY;
-  yAxis = ((pageY / 2 - mouseY) / pageY) * 300;
-  //horizontalAxis
-  mouseX = event.pageX / -pageX;
-  xAxis = -mouseX * 100 - 100;
-
-  $(".box__ghost-eyes").css({
-    transform: "translate(" + xAxis + "%,-" + yAxis + "%)"
+  tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+          // Hide all content
+          content.forEach(c => c.style.display = 'none');
+          
+          // Remove active class from all tabs
+          tabs.forEach(t => t.classList.remove('active'));
+          
+          // Show target content
+          const target = document.getElementById(tab.getAttribute('data-target'));
+          target.style.display = 'block';
+          target.classList.add('active-content');
+          
+          // Add active class to current tab
+          tab.classList.add('active');
+      });
   });
 
-  console.log("X: " + xAxis);
+  // Trigger click on the first tab to show first content by default
+  if(tabs.length > 0) tabs[0].click();
 });
 
+document.getElementById('commandInput').addEventListener('keypress', function(e) {
+  // Check if the Enter key is pressed
+  if (e.key === 'Enter') {
+    // Prevent the default action to avoid submitting a form if the input is inside one
+    e.preventDefault();
+    
+    // Get the command from the input
+    var command = this.value;
+    
+    // Parse the command to find the section name (assuming the format is "cd sectionName")
+    var sectionName = command.split(' ')[1]; // This splits the command by space and gets the second part
+    
+    // Check if the section exists
+    var section = document.getElementById(sectionName);
+    if (section) {
+      // Scroll to the section if it exists
+      section.scrollIntoView({behavior: 'smooth'});
+    } else {
+      // Optionally handle the case where the section does not exist
+      alert("Section '" + sectionName + "' not found.");
+    }
+    
+    // Clear the command input
+    this.value = '';
+  }
+});
+
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+const certificateWidth = slider.querySelector('img').clientWidth;
+let currentPosition = 0;
+
+prevButton.addEventListener('click', () => {
+  if (currentPosition < 0) {
+    currentPosition += certificateWidth;
+    slider.style.transform = `translateX(${currentPosition}px)`;
+  }
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentPosition > -(slider.scrollWidth - certificateWidth)) {
+    currentPosition -= certificateWidth;
+    slider.style.transform = `translateX(${currentPosition}px)`;
+  }
+});
