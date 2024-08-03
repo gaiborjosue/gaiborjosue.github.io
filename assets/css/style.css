@@ -419,7 +419,8 @@ section {
     border-style: solid;
     border-radius: 10px;
     border-color: var(--first-color);
-    margin-right: 15px;
+    margin-right: 5px;
+    margin-top: 5px;
     transition: 0.5s;
     color: var(--first-color);
 }
